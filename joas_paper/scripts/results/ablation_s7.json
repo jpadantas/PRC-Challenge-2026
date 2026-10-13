@@ -1,0 +1,151 @@
+{
+  "n_val": 153706,
+  "regime_counts_val": {
+    "clean": 152064,
+    "ext": 1,
+    "lirf": 24,
+    "miss": 1617
+  },
+  "regime_counts_tr": {
+    "clean": 163641,
+    "ext": 0,
+    "lirf": 37,
+    "miss": 1999
+  },
+  "median_offset_tr": 55.0,
+  "groups": {
+    "queue_at_pushback": [
+      "rwy_queue_at_push",
+      "apt_queue_at_push"
+    ],
+    "wake_separation": [
+      "prev_dep_wake_penalty",
+      "dt_to_prev_dep",
+      "is_behind_heavy",
+      "recat_eu"
+    ],
+    "osm_taxi_network": [
+      "osm_dist_m",
+      "sl_dist_m",
+      "tortuosity",
+      "utt_osm_seconds"
+    ],
+    "pier_contention": [
+      "pier_queue_15m"
+    ],
+    "weather": [
+      "snowfall",
+      "wx_is_deicing_risk",
+      "wx_is_freezing_fog",
+      "temperature_2m",
+      "wind_speed_10m",
+      "wx_visibility_m",
+      "headwind",
+      "crosswind",
+      "is_tailwind"
+    ],
+    "rolling_flow_15_30min": [
+      "rwy_dep_q_15",
+      "rwy_dep_q_30",
+      "rwy_all_q_15",
+      "apt_dep_q_15",
+      "apt_dep_q_30",
+      "apt_arr_q_15",
+      "apt_arr_q_30",
+      "arr_taxi_15m",
+      "arr_taxi_30m",
+      "arr_taxi_60m",
+      "arr_taxi_trend",
+      "dt_prev_dep_rwy",
+      "dt_prev_any_rwy",
+      "is_prev_arr"
+    ],
+    "historical_encodings": [
+      "enc_med_stand_rwy",
+      "enc_mean_stand_rwy",
+      "enc_utt_stand_rwy",
+      "enc_med_rwy",
+      "enc_med_stand",
+      "enc_med_operator"
+    ]
+  },
+  "t_phys_jan_s": 1.026212453842163,
+  "A_direct_base": {
+    "full": 452.6981008308922,
+    "clean": 233.8304551446144
+  },
+  "B_offset_base_naive": {
+    "full": 475.0788446888319,
+    "clean": 231.8490205362901
+  },
+  "C_offset_phys_naive": {
+    "full": 474.99865975834126,
+    "clean": 231.68289493694573
+  },
+  "R1_plus_missing_specialist": {
+    "full": 472.2060215484681,
+    "miss": 2614.1925490242015
+  },
+  "R2_plus_lirf_identity": {
+    "full": 367.2113602075817,
+    "lirf": 7940.527873930465
+  },
+  "R3_full_router": {
+    "full": 367.52574323490234,
+    "ext": 5975.0,
+    "clean": 231.68289493694573,
+    "miss": 2614.1925490242015,
+    "lirf": 7940.527873930465
+  },
+  "R3_ext_clip7200": {
+    "full": 367.4980317506108
+  },
+  "router_minus_lirf": 472.45054308519667,
+  "router_minus_missing_spec": 371.10695483371836,
+  "router_minus_ext": 367.2113602075817,
+  "se_share": {
+    "clean": 0.3931406965934808,
+    "miss": 0.5322538543592042,
+    "lirf": 0.07288592018663291,
+    "ext": 0.0017195288606822836
+  },
+  "lirf_identity_hit_rate_120s_val": 0.5,
+  "drop_group": {
+    "queue_at_pushback": {
+      "clean": 232.56743528350725,
+      "full": 368.0780260274355,
+      "n_removed": 2
+    },
+    "wake_separation": {
+      "clean": 231.9258234885694,
+      "full": 367.6772941113508,
+      "n_removed": 4
+    },
+    "osm_taxi_network": {
+      "clean": 230.86487587062027,
+      "full": 367.0161319356255,
+      "n_removed": 4
+    },
+    "pier_contention": {
+      "clean": 231.4007446414136,
+      "full": 367.3498449049149,
+      "n_removed": 1
+    },
+    "weather": {
+      "clean": 233.7271288619194,
+      "full": 368.8040337014989,
+      "n_removed": 9
+    },
+    "rolling_flow_15_30min": {
+      "clean": 230.51025230114456,
+      "full": 366.79554857708297,
+      "n_removed": 14
+    },
+    "historical_encodings": {
+      "clean": 230.01943478276223,
+      "full": 366.490590738996,
+      "n_removed": 6
+    }
+  },
+  "corr_da_y_clean_val": 0.6482779637379977
+}

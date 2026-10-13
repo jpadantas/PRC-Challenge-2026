@@ -1,0 +1,56 @@
+# Credentials - NEVER commit these (the schema is documented in README.md)
+credentials.json
+credentials.example.json
+.env
+
+# Challenge data (distributed by the PRC to registered participants; download with src/download_data.py)
+data/raw/
+data/processed/
+
+# Leaderboard submissions: only the files needed to reproduce the final submission are versioned
+data/submissions/*
+!data/submissions/inspiring-kitten_final.parquet
+!data/submissions/inspiring-kitten_v104.parquet
+!data/submissions/inspiring-kitten_v109.parquet
+!data/submissions/inspiring-kitten_v110.parquet
+!data/submissions/inspiring-kitten_v111.parquet
+!data/submissions/inspiring-kitten_v112.parquet
+
+# Large or redundant external caches (rebuilt by the download scripts)
+data/external/osm_cache/
+data/external/weather_hourly_backup.parquet
+data/external/weather_hourly_raw_merged.parquet
+
+# Trained models (several GB) and CatBoost's auto-generated training logs
+models/
+catboost_info/
+
+# Exploratory scratch work and notes (not released)
+scratch/
+notebooks/
+
+# JOAS paper: only the PDF and the scripts that reproduce its tables and figures are versioned
+joas_paper/*
+!joas_paper/main.pdf
+!joas_paper/scripts/
+joas_paper/scripts/__pycache__/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Agent / IDE / editor tooling
+.claude/
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.tmp
+ranking.html
